@@ -3,8 +3,8 @@ on:
   # push:
   #   branches: 
   #     - master
-  # watch:
-  #   types: started
+   watch:
+     types: started
     # push:
     #   tags:
     #     - "*"
