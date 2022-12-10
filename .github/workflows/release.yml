@@ -15,6 +15,7 @@ jobs:
     - name: Docker Build
       run: |
         mkdir bin
+        rm -rf ./luci-app-nut
         svn export https://github.com/openwrt/luci/branches/openwrt-21.02/applications/luci-app-nut
         cp -rf ./luci-app-nut ./bin/
         docker pull openwrtorg/sdk:x86-64-21.02-SNAPSHOT
